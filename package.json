@@ -1,0 +1,12 @@
+{
+  "name": "jira-issue-generator-netlify",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check netlify-site/script.js && node --check netlify/functions/generate-draft.mjs && node --check netlify/functions/create-jira.mjs"
+  },
+  "dependencies": {
+    "openai": "^5.12.2"
+  }
+}
+
